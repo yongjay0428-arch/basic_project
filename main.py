@@ -7,4 +7,4 @@ app.mount("/view", StaticFiles(directory="view"), name="view")
 
 @app.get("/")
 async def root():
-    return RedirectResponse("/view")
+    return RedirectResponse("/view/index.html")
